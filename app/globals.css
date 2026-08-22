@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  /* -- Core palette : civic ledger -- */
+  --paper: #f1f2ec;
+  --paper-dim: #e8e9e1;
+  --surface: #ffffff;
+  --ink: #1c231f;
+  --ink-soft: #4d5750;
+  --line: #d9dbcd;
+  --line-strong: #c3c6b4;
+
+  --spine: #16302a;
+  --spine-soft: #1f3f37;
+  --spine-line: #2d5347;
+
+  --brass: #a9812f;
+  --brass-soft: #cea856;
+  --brass-dim: #f4ead2;
+
+  --stamp-green: #2f6b4f;
+  --stamp-green-dim: #e2ede6;
+  --stamp-rust: #a8402c;
+  --stamp-rust-dim: #f4e3de;
+  --stamp-amber: #b9791f;
+  --stamp-amber-dim: #f5e9d4;
+  --stamp-slate: #4a5568;
+  --stamp-slate-dim: #e7e9ee;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-dim: var(--paper-dim);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+
+  --color-spine: var(--spine);
+  --color-spine-soft: var(--spine-soft);
+  --color-spine-line: var(--spine-line);
+
+  --color-brass: var(--brass);
+  --color-brass-soft: var(--brass-soft);
+  --color-brass-dim: var(--brass-dim);
+
+  --color-stamp-green: var(--stamp-green);
+  --color-stamp-green-dim: var(--stamp-green-dim);
+  --color-stamp-rust: var(--stamp-rust);
+  --color-stamp-rust-dim: var(--stamp-rust-dim);
+  --color-stamp-amber: var(--stamp-amber);
+  --color-stamp-amber-dim: var(--stamp-amber-dim);
+  --color-stamp-slate: var(--stamp-slate);
+  --color-stamp-slate-dim: var(--stamp-slate-dim);
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+}
+
+* {
+  border-color: var(--line);
+}
+
+body {
+  background-color: var(--paper);
+  background-image: linear-gradient(var(--line) 1px, transparent 1px);
+  background-size: 100% 2.25rem;
+  background-attachment: local;
+}
+
+::selection {
+  background: var(--brass-dim);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 2px;
+}
+
+.figures {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+.stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 3px;
+  transform: rotate(-1.5deg);
+  white-space: nowrap;
+}
+
+.stamp-green { color: var(--stamp-green); border-color: var(--stamp-green); background: var(--stamp-green-dim); }
+.stamp-rust { color: var(--stamp-rust); border-color: var(--stamp-rust); background: var(--stamp-rust-dim); }
+.stamp-amber { color: var(--stamp-amber); border-color: var(--stamp-amber); background: var(--stamp-amber-dim); }
+.stamp-slate { color: var(--stamp-slate); border-color: var(--stamp-slate); background: var(--stamp-slate-dim); }
+.stamp-brass { color: var(--brass); border-color: var(--brass); background: var(--brass-dim); }
+
+.perforated {
+  position: relative;
+  border-top: 1.5px dashed var(--line-strong);
+}
+.perforated::before,
+.perforated::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--paper);
+  border: 1.5px solid var(--line-strong);
+}
+.perforated::before { left: -6px; }
+.perforated::after { right: -6px; }
+
+@media print {
+  .no-print { display: none !important; }
+}
