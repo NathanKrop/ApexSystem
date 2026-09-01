@@ -1,4 +1,4 @@
-# ST. ELIZABETH GIRLS SINOR SECONDARY SCHOOL — Frontend
+# ST. ELIZABETH GIRLS SENIOR SCHOOL — Frontend
 
 Frontend-only build for the public secondary school management & finance system, per the build prompt.
 No backend, no Supabase, no auth — every screen renders from static mock data in `lib/mock-data.ts` so

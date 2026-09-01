@@ -53,7 +53,7 @@ export default function LoginPage() {
               <Image src="/Logo/school_logo.jpg" alt="School Logo" width={40} height={40} className="object-cover" />
             </div>
             <div className="leading-tight">
-              <p className="font-display text-base text-ink">ST. ELIZABETH GIRLS SINOR SECONDARY SCHOOL</p>
+              <p className="font-display text-base text-ink">ST. ELIZABETH GIRLS SENIOR SCHOOL</p>
               <p className="text-[10.5px] text-ink-soft tracking-wide">Public School Finance</p>
             </div>
           </div>

@@ -2,7 +2,7 @@
 // registrar and finance office after launch — see build notes.
 
 export const SCHOOL = {
-  name: "ST. ELIZABETH GIRLS SINOR SECONDARY SCHOOL",
+  name: "ST. ELIZABETH GIRLS SENIOR SCHOOL",
   motto: "Elimu ni Ufunguo",
   county: "Meru County",
   address: "P.O. Box 214-60200, Meru",
@@ -66,9 +66,9 @@ export const PAYMENT_TYPES = [
 ];
 
 export const BANK_ACCOUNTS = [
-  { id: "ba1", bank: "Equity Bank", branch: "Meru", accountName: "ST. ELIZABETH GIRLS SINOR SECONDARY SCHOOL — Fees", accountNo: "1090 2734 5510", type: "Fees" },
-  { id: "ba2", bank: "KCB Bank", branch: "Meru", accountName: "ST. ELIZABETH GIRLS SINOR SECONDARY SCHOOL — Operations", accountNo: "1122 8890 041", type: "Operations" },
-  { id: "ba3", bank: "Co-operative Bank", branch: "Meru", accountName: "ST. ELIZABETH GIRLS SINOR SECONDARY SCHOOL — Bursary", accountNo: "0114 5567 213", type: "Bursary" },
+  { id: "ba1", bank: "Equity Bank", branch: "Meru", accountName: "ST. ELIZABETH GIRLS SENIOR SCHOOL — Fees", accountNo: "1090 2734 5510", type: "Fees" },
+  { id: "ba2", bank: "KCB Bank", branch: "Meru", accountName: "ST. ELIZABETH GIRLS SENIOR SCHOOL — Operations", accountNo: "1122 8890 041", type: "Operations" },
+  { id: "ba3", bank: "Co-operative Bank", branch: "Meru", accountName: "ST. ELIZABETH GIRLS SENIOR SCHOOL — Bursary", accountNo: "0114 5567 213", type: "Bursary" },
 ];
 
 export type Student = {
@@ -240,9 +240,9 @@ export const RECON_RECORDS = [
 ];
 
 export const SMS_TEMPLATES = [
-  { id: "tpl1", name: "Fee balance reminder", body: "Dear Parent, {student_name} (Adm {adm_no}) has an outstanding balance of KES {balance}. Kindly clear before {deadline}. — ST. ELIZABETH GIRLS SINOR SECONDARY SCHOOL" },
+  { id: "tpl1", name: "Fee balance reminder", body: "Dear Parent, {student_name} (Adm {adm_no}) has an outstanding balance of KES {balance}. Kindly clear before {deadline}. — ST. ELIZABETH GIRLS SENIOR SCHOOL" },
   { id: "tpl2", name: "Payment confirmation", body: "Payment of KES {amount} received for {student_name}, Adm {adm_no}. Receipt No. {receipt_no}. New balance: KES {balance}. Thank you." },
-  { id: "tpl3", name: "Term opening notice", body: "Reminder: Term {term} opens on {date}. Please ensure fees and requirements are ready. — ST. ELIZABETH GIRLS SINOR SECONDARY SCHOOL" },
+  { id: "tpl3", name: "Term opening notice", body: "Reminder: Term {term} opens on {date}. Please ensure fees and requirements are ready. — ST. ELIZABETH GIRLS SENIOR SCHOOL" },
 ];
 
 export const SMS_DELIVERY_LOG = [

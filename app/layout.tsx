@@ -12,7 +12,7 @@ import "@fontsource/ibm-plex-mono/600.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ST. ELIZABETH GIRLS SINOR SECONDARY SCHOOL",
+  title: "ST. ELIZABETH GIRLS SENIOR SCHOOL",
   description: "School management & finance system for public secondary schools",
 };
 

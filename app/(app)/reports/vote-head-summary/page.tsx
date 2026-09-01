@@ -8,9 +8,9 @@ import { kes } from "@/lib/format";
 import { VOTES_ASSIGNMENT, VOTE_HEADS } from "@/lib/mock-data";
 
 export default function VoteHeadSummaryPage() {
-  const rows = VOTE_HEADS.map((v) => {
+  const rows = VOTE_HEADS.map((v, index) => {
     const match = VOTES_ASSIGNMENT.find((a) => a.voteHead === v.name);
-    return { ...v, actual: match?.actual ?? Math.round(80000 + Math.random() * 40000) };
+    return { ...v, actual: match?.actual ?? 80000 + index * 5000 };
   });
   const receiptsTotal = rows.filter((r) => r.type === "Receipt").reduce((s, r) => s + r.actual, 0);
   const paymentsTotal = rows.filter((r) => r.type === "Payment").reduce((s, r) => s + r.actual, 0);

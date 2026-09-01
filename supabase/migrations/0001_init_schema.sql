@@ -1,5 +1,5 @@
 -- ============================================================
--- St. Elizabeth Girls Senior Secondary School — Manager
+-- St. Elizabeth Girls Senior School — Manager
 -- Initial schema: tables, RLS, triggers, views
 -- ============================================================
 
@@ -714,11 +714,11 @@ insert into payment_types (name, code) values
   ('Bursary — County', 'BURS-CTY');
 
 insert into bank_accounts (bank, branch, account_name, account_no, purpose) values
-  ('Equity Bank', 'Meru', 'ST. ELIZABETH GIRLS SINOR SECONDARY SCHOOL — Fees', '1090 2734 5510', 'Fees'),
-  ('KCB Bank', 'Meru', 'ST. ELIZABETH GIRLS SINOR SECONDARY SCHOOL — Operations', '1122 8890 041', 'Operations'),
-  ('Co-operative Bank', 'Meru', 'ST. ELIZABETH GIRLS SINOR SECONDARY SCHOOL — Bursary', '0114 5567 213', 'Bursary');
+  ('Equity Bank', 'Meru', 'ST. ELIZABETH GIRLS SENIOR SCHOOL — Fees', '1090 2734 5510', 'Fees'),
+  ('KCB Bank', 'Meru', 'ST. ELIZABETH GIRLS SENIOR SCHOOL — Operations', '1122 8890 041', 'Operations'),
+  ('Co-operative Bank', 'Meru', 'ST. ELIZABETH GIRLS SENIOR SCHOOL — Bursary', '0114 5567 213', 'Bursary');
 
 insert into sms_templates (name, body) values
-  ('Fee balance reminder', 'Dear Parent, {student_name} (Adm {adm_no}) has an outstanding balance of KES {balance}. Kindly clear before {deadline}. — ST. ELIZABETH GIRLS SINOR SECONDARY SCHOOL'),
+  ('Fee balance reminder', 'Dear Parent, {student_name} (Adm {adm_no}) has an outstanding balance of KES {balance}. Kindly clear before {deadline}. — ST. ELIZABETH GIRLS SENIOR SCHOOL'),
   ('Payment confirmation', 'Payment of KES {amount} received for {student_name}, Adm {adm_no}. Receipt No. {receipt_no}. New balance: KES {balance}. Thank you.'),
-  ('Term opening notice', 'Reminder: Term {term} opens on {date}. Please ensure fees and requirements are ready. — ST. ELIZABETH GIRLS SINOR SECONDARY SCHOOL');
+  ('Term opening notice', 'Reminder: Term {term} opens on {date}. Please ensure fees and requirements are ready. — ST. ELIZABETH GIRLS SENIOR SCHOOL');
